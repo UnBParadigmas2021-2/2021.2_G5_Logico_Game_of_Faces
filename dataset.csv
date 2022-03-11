@@ -1,0 +1,33 @@
+Jon Snow;M;Patrulha da Noite, Povo Livre, Casa Stark, Casa Targaryen;norte;TRUE;preto;FALSE;Deuses Antigos da Floresta;branca;adulto;FALSE;TRUE
+Arya Stark;F;Casa Stark, Homens sem rosto;norte;FALSE;preto;FALSE;Deuses Antigos da Floresta, Deus de Muitas Faces;branca;adulto;FALSE;FALSE
+Tyrion Lannister;M;Casa Lannister, Casa Targaryen, Rei dos Ândalos e dos Primeiros Homens;leste;FALSE;loiro;FALSE;Fé dos Sete;branca;adulto;FALSE;TRUE
+Sansa Stark;F;Casa Stark, Casa Lannister, Casa Bolton;norte;FALSE;ruivo;FALSE;Deuses Antigos da Floresta, Fé dos Sete;branca;adulto;FALSE;FALSE
+Cersei Lannister;F;Casa Lannister;leste;FALSE;loiro;TRUE;Nenhuma;branca;adulto;TRUE;FALSE
+Jaime Lannister;M;Casa Lannister;leste;FALSE;loiro;TRUE;Fé dos Sete;branca;adulto;TRUE;FALSE
+Daenerys Targaryen;F;Casa Targaryen;leste;FALSE;loiro;TRUE;Fé dos Sete;branca;adulto;FALSE;FALSE
+Bran Stark;M;Casa Stark;norte;FALSE;preto;FALSE;Deuses Antigos da Floresta;branca;adulto;FALSE;TRUE
+Eddard Stark;M;Casa Stark, Casa Baratheon;norte;FALSE;preto;TRUE;Deuses Antigos da Floresta;branca;adulto;TRUE;FALSE
+Samwell Tarly;M;Casa Tarly, Patrulha da Noite, Ordem dos Meistres, Rei dos Ândalos e dos Primeiros Homens;sudoeste;FALSE;preto;FALSE;Deuses Antigos da Floresta, Fé dos Sete;branca;adulto;TRUE;TRUE
+Tywin Lannister;M;Casa Lannister;leste;FALSE;loiro;TRUE;Desconhecida;branca;idoso;TRUE;FALSE
+Petyr Baelish;M;Casa Baelish, Casa Arryn;leste;FALSE;grisalho;TRUE;Desconhecida;branca;adulto;FALSE;FALSE
+Sandor Clegane;M;Irmandade sem bandeiras, Casa Clegane, Casa Baratheon, Guarda Real;leste;FALSE;castanho;TRUE;Desconhecida;branca;adulto;FALSE;TRUE
+Catelyn Stark;F;Casa Stark, Casa Tully;norte;FALSE;ruivo;TRUE;Fé dos Sete;branca;adulto;TRUE;FALSE
+Stannis Baratheon;M;Casa Baratheon;sudeste;FALSE;grisalho;TRUE;R'hllor;branca;adulto;TRUE;TRUE
+Robb Stark;M;Casa Stark;norte;FALSE;preto;TRUE;Deuses Antigos da Floresta, Fé dos Sete;branca;adulto;FALSE;FALSE
+Theon Greyjoy;M;Casa Greyjoy, Casa Stark, Ramsay Bolton, Yara Greyjoy;norte;FALSE;castanho;TRUE;Deus Afogado;branca;adulto;FALSE;FALSE
+Jorah Mormont;M;Casa Targaryen, Companhia Dourada, Casa Mormont;leste;FALSE;loiro;TRUE;Deuses Antigos da Floresta;branca;adulto;FALSE;FALSE
+Gregor Clegane;M;Guarda Real, Casa Clegane, Casa Lannister;leste;FALSE;castanho;TRUE;Desconhecida;branca;adulto;FALSE;FALSE
+Varys;M;Casa Targaryen;leste;FALSE;careca;TRUE;Desconhecida;branca;adulto;FALSE;FALSE
+Joffrey Baratheon;M;Casa Baratheon, Casa Lannister;leste;FALSE;loiro;TRUE;Fé dos Sete;branca;criança;FALSE;FALSE
+Ramsay Bolton;M;Casa Bolton;norte;TRUE;preto;TRUE;Deuses Antigos da Floresta;branca;adulto;FALSE;FALSE
+Brienne of Tarth;F;Casa Tarth, Sansa Stark, Guarda Real;sul;FALSE;loiro;FALSE;Fé dos Sete;branca;adulto;FALSE;FALSE
+Margaery Tyrell;F;Casa Baratheon, Casa Tyrell;leste;FALSE;castanho;TRUE;Desconhecida;branca;adulto;FALSE;FALSE
+Tommen Baratheon;M;Casa Baratheon;leste;FALSE;loiro;TRUE;Fé dos Sete;branca;criança;FALSE;FALSE
+Rickon Stark;M;Casa Stark;norte;FALSE;castanho;TRUE;Deuses Antigos da Floresta;branca;criança;FALSE;FALSE
+Khal Drogo;M;A ele mesmo;extremo nordeste;FALSE;castanho;TRUE;Desconhecida;parda;adulto;FALSE;FALSE
+Melisandre;F;R'hllor, Jon Snow;extremo sudeste;FALSE;ruivo;TRUE;R'hllor;branca;adulto;FALSE;TRUE
+Olenna Tyrell;F;Casa Tyrell;sudoeste;FALSE;grisalho;TRUE;Fé dos Sete;branca;idoso;TRUE;FALSE
+Renly Baratheon;M;Casa Baratheon;sudoeste;FALSE;preto;TRUE;Fé dos Sete;branca;adulto;FALSE;FALSE
+Roose Bolton;M;Casa Bolton;norte;FALSE;grisalho;TRUE;Deuses Antigos da Floresta;branca;adulto;TRUE;FALSE
+Verme Cinzento;M;Imaculados, Casa Targaryen;sudeste;FALSE;preto;TRUE;Desconhecida;parda;adulto;FALSE;FALSE
+Loras Tyrell;M;Casa Tyrell;sudoeste;FALSE;castanho;TRUE;Fé dos Sete;branca;adulto;FALSE;FALSE
