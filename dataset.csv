@@ -64,3 +64,37 @@ Jaqen H'ghar;M;Homens Sem Rosto;mais ao leste;FALSE;castanho;FALSE;Deus de Muita
 Meistre Aemon;M;Patrulha da Noite, Ordem dos Meistres, Casa Targaryen;norte;FALSE;grisalho;TRUE;Fé dos Sete;branca;idoso;FALSE;TRUE
 Daario Naharis;M;Casa Targaryen, Segundos Filhos;mais ao leste;FALSE;preto;FALSE;Desconhecido;branca;adulto;FALSE;FALSE
 Shae;F;Nenhum;norte;FALSE;preto;TRUE;Desconhecido;branca;adulto;FALSE;FALSE
+Kevan Lannister;M;Casa Lannister;leste;FALSE;preto;TRUE;Fé dos Sete;branca;idoso;TRUE;FALSE
+Beric Dondarrion;M;Dondarrion, Irmandade Sem Bandeiras;sudeste;FALSE;preto;Desconhecido;R'hllor;branca;adulto;FALSE;TRUE
+Robin Arryn;M;Casa Arryn;leste;FALSE;preto;TRUE;Não;branca;criança;FALSE;FALSE
+Qyburn;M;Casa Lannister;leste;FALSE;preto;TRUE;Não;branca;velho;FALSE;FALSE
+Edmure Tully;M;Casa Tully;centro-oeste;FALSE;castanho;FALSE;Fé dos Sete;branca;adulto;TRUE;FALSE
+Hot Pie;M;Casa Lannister;leste;FALSE;preto;FALSE;Não;branca;criança;FALSE;FALSE
+Obara Sand;F;Casa Martell;sul;FALSE;preto;TRUE;Não;branca;adulto;FALSE;FALSE
+Ros;F;Varys;leste;FALSE;loiro;TRUE;Não;branca;adulto;FALSE;FALSE
+Thoros de Myr;M;Irmandade Sem Bandeiras;oeste;FALSE;loiro;VERDADEIRO;Rhllor;branca;adulto;FALSE;TRUE
+Nymeria Sand;F;Casa Martell;sul;FALSE;preto;VERDADEIRO;Não;branca;adulto;FALSE;FALSE
+Tyene Sand;F;Casa Martell;sul;FALSE;preto;VERDADEIRO;Não;branca;adulto;FALSE;FALSE
+Lyanna Mormont;F;Casa Stark;norte;FALSE;preto;VERDADEIRO;Não;branca;criança;FALSE;TRUE
+Meryn Trant;M;Casa Lannister;leste;FALSE;grisalho;VERDADEIRO;Fé dos Sete;branca;adulto;FALSE;FALSE
+Selyse Baratheon;F;Casa Baratheon;leste;FALSE;castanho;VERDADEIRO;Rhllor;branca;adulto;TRUE;FALSE
+Rodrik Cassel;M;Casa Stark;norte;FALSE;branco;VERDADEIRO;Antigos;branca;velho;FALSE;FALSE
+Olly;M;Patrulha noite;norte;FALSE;castanho;VERDADEIRO;Antigos;branca;criança;FALSE;TRUE
+Criança abandonada;F;Homens sem rosto;oeste;FALSE;loiro;VERDADEIRO;Sem rosto;branca;criança;FALSE;FALSE
+Benjen Stark;M;Casa Stark;norte;FALSE;castanho;VERDADEIRO;Antigos;cinza;adulto;FALSE;TRUE
+Janos Slynt;M;Patrulha noite;norte;FALSE;careca;VERDADEIRO;Fé dos Sete;branca;velho;FALSE;TRUE
+Talisa Stark;F;Casa Stark;norte;FALSE;preto;VERDADEIRO;Fé dos Sete;branca;adulto;FALSE;FALSE
+Irri;F;Casa Targaryen;oeste;FALSE;preto;VERDADEIRO;Dothraki;branca;adulto;FALSE;FALSE
+Doreah;F;Casa Targaryen;oeste;FALSE;preto;VERDADEIRO;Dothraki;branca;adulto;FALSE;FALSE
+Hizdahr zo Loraq;M;Casa Loraq;oeste;FALSE;preto;VERDADEIRO;Ghiscari;parda;adulto;FALSE;FALSE
+Yohn Royce;M;Casa Arryn;norte;FALSE;grisalho;FALSE;Não;branca;velho;FALSE;FALSE
+Myranda;F;Casa Bolton;norte;VERDADEIRO;castanho;FALSE;Não;branca;adulto;FALSE;FALSE
+Septa Unella;F;Os Sete;leste;FALSE;careca;FALSE;Sete;branca;velho;FALSE;FALSE
+Rast;M;Patrulha noite;norte;FALSE;preto;VERDADEIRO;Não;branca;adulto;FALSE;TRUE
+Locke;M;Casa Bolton;norte;FALSE;preto;VERDADEIRO;Não;branca;adulto;FALSE;TRUE
+Bowen Marsh;M;Patrulha noite;norte;FALSE;preto;VERDADEIRO;Não;branca;adulto;FALSE;TRUE
+Othell Yarwyck;M;Patrulha noite;norte;FALSE;grisalho;VERDADEIRO;Antigos;branca;velho;FALSE;TRUE
+Maester Wolkan;M;Casa Bolton;norte;FALSE;careca;FALSE;Não;branca;velho;FALSE;FALSE
+Qhono;M;Dothraki;oeste;FALSE;preto;VERDADEIRO;Dothraki;parda;adulto;FALSE;FALSE
+Kovarro;M;Casa Targaryen;oeste;FALSE;preto;FALSE;Dothraki;negra;adulto;FALSE;FALSE
+Marei;F;Petyr Baelish;leste;FALSE;ruivo;FALSE;Não;branca;adulto;FALSE;FALSE
