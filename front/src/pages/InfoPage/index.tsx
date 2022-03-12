@@ -45,8 +45,7 @@ const styles = {
     width: '50%', 
     display: 'flex', 
     flexDirection: 'column',
-    minHeight: innerHeight * 0.4,
-    maxHeight: innerHeight * 0.5,
+    height: innerHeight * 0.45,
     justifyContent: 'space-between'
   },
   buttonPosition: {

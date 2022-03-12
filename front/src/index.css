@@ -6,6 +6,13 @@ body {
     "Montserrat Alternates" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #eee7d3;
+}
+
+@font-face {
+  font-family: "Game of Thrones";
+  src: local("Game of Thrones"), url("./fonts/gameOfThrones.ttf");
+  color: #111922;
 }
 
 code {

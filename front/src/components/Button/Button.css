@@ -6,7 +6,18 @@ button {
   border-radius: 5px;
 
   color: white;
-  font-family: "Montserrat Alternates";
-  font-size: 40px;
-  font-weight: 500;
+  font-family: "Game of Thrones";
+  font-size: 20px;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+button:not(:hover) {
+  opacity: 1;
+  transition-duration: 0.5s;
 }
