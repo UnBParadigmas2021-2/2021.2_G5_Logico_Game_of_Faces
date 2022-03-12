@@ -35,16 +35,12 @@ is_bastard :-
 	has_black_hair.
 
 has_black_hair :-
-	write('O seu personagem tem cabelo preto? (s/n).'),
+	write('O seu personagem tem cabelo ruivo? (s/n).'),
 	read(AnswerHair),
-	compare_hair(AnswerHair, 'preto', _),
-	information(gender, Asw_gender),
-	information(bastard, Asw_bastard),
-    information(hair, Asw_hair),
-	findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, _, _, _, _), Character_list),
-  	length(Character_list, List_length), List_length == 1,
-	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, _, _, _, _),
-	write('Hmm... Eu acho que... '), write(Guess);
+	compare_hair(AnswerHair, 'ruivo', AuxList),
+  	length(AuxList, List_length), List_length == 1,
+  	[Head | Tail] = AuxList,
+	write('Hmm... Eu acho que... '), write(Head);
 	has_child.
 
 has_child :-
@@ -92,8 +88,3 @@ has_white_skin :-
     findall(Z, character(Z, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, Asw_skin, _, Asw_child, Asw_wall), Character_list_dois),
     [Head | Tail] = Character_list_dois,
     write('Hmm... Fiquei em dúvida... Mas acho que é '), write(Head), nl, write(Tail).
-
-
-
-
-

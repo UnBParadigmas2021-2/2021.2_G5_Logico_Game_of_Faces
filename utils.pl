@@ -16,9 +16,14 @@ compare_boolean(A,B,C) :-
 	  ;  C = 'FALSE'
     ).
 
-compare_hair(A,B,C) :-
-	( A == B
-	  -> asserta(information(hair, 'preto'))
+compare_hair(A,B,C_list) :-
+    ( A == B
+      -> information(gender, Asw_gender),
+	     information(bastard, Asw_bastard), 
+      	 findall(X, character(X, Asw_gender, _, _, Asw_bastard, 'ruivo', _, _, _, _, _, _), C_list)
+    ;information(gender, Asw_gender),
+	 information(bastard, Asw_bastard),  
+     findall(X, character(X, Asw_gender, _, _, Asw_bastard, _, _, _, _, _, _, _), C_list)
     ).
 
 compare_skin(A,B,C) :-
@@ -34,6 +39,3 @@ popula_information :-
     asserta(information(child, _)),
     asserta(information(wall, _)),
     asserta(information(skin, _)).
-
-
-auxiliar_findall (A,B,C,D,E,F,Z)
