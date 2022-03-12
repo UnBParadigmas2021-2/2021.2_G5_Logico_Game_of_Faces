@@ -8,12 +8,25 @@
 %symbolic fact
 information(A, B).
 
+% Nome(1) Sexo(2) CasaStark(3)  CasaTargaryen(4)  CasaLannister(5) CasaBaratheon(6)  CasaGreyjoy(7)  CasaBolton(8)  CasaTyrell(9)  CasaMartell(10)
+% CasaArryn(11)  CasaTully(12)  CasaReed(13)  OrdemdosMeistres(14)  OsSete(15) HomensSemRosto(16)  IrmandadeSemBandeiras(17)  PatrulhadaNoite(18)
+% PovoLivre(19) Norte(20) Sul(21) Oeste(22) Leste(23) ExNorte(24) ExSul(25) ExOeste(26) ExLeste(27) Bastardo(28) Preto(29) Loiro(30) Ruivo(31) Castanho(32) Grisalho(33)
+% EstaMorto(34) Dothraki(35)  DeusesAntigosdaFloresta(36)  FédosSete(37)  Ghiscari(38)  DeusdeMuitasFaces(39)  Rhllor(40)  DeusAfogado(41)
+% Branca(42) Parda(43) Negra(44) Adulto(45) Criança(46) Idoso(47) TemFilhos(48) FoiMuralha(49)
+
+% Modelo para uso (49 campos no TOTAL): character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _)
+
 main :-	
 	nl, write('Bem-vindo ao Game of faces'), nl,nl,
 	popula,
     popula_information,
 
 	is_Male.
+
+
+% TODO: Se o cabelo já é preto, por exemplo, não vai perguntar se é ruivo, e já adicionar o information das outras cores como FALSE
+% Obs.: pras perguntas que (se é um não é outro (ex.: cor do cabelo)), tem um compare específico pra cada (ex.: compare_black_hair),
+% pq aí asserta os outros como FALSE ja
 
 is_Male :-
 	write('O seu personagem é Homem? (s/n).'),
