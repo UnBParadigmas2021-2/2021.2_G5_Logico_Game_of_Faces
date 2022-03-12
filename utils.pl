@@ -15,6 +15,40 @@ compare_boolean(A,B,C) :-
 	  ;  C = 'FALSE'
     ).
 
+compare_black_hair(A,B,C) :-
+	( A == B
+	    -> C = 'TRUE',
+            asserta(information(blondeHair, 'FALSE')),
+            asserta(information(redHair, 'FALSE')),
+            asserta(information(brownHair, 'FALSE')),
+            asserta(information(grayHair, 'FALSE'))
+	    ; C = 'FALSE'
+    ).
+
+compare_blonde_hair(A,B,C) :-
+	( A == B
+	    -> C = 'TRUE',
+            asserta(information(redHair, 'FALSE')),
+            asserta(information(brownHair, 'FALSE')),
+            asserta(information(grayHair, 'FALSE'))
+	    ; C = 'FALSE'
+    ).
+
+compare_age_elder(A,B,C) :-
+	( A == B
+	    -> C = 'TRUE',
+            asserta(information(ageAdult, 'FALSE')),
+            asserta(information(ageChild, 'FALSE'))
+	    ; C = 'FALSE'
+    ).
+
+compare_age_adult(A,B,C) :-
+	( A == B
+	    -> C = 'TRUE',
+            asserta(information(ageChild, 'FALSE'))
+	    ; C = 'FALSE',
+            asserta(information(ageChild, 'TRUE'))
+    ).
 
 popula_information :-
     asserta(information(gender, 'undefined')),
