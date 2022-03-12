@@ -15,6 +15,8 @@ main :-
 
 	is_Male.
 
+% TODO: Se o cabelo já é preto, por exemplo, não vai perguntar se é ruivo, e já adicionar o information das outras cores como FALSE
+
 is_Male :-
 	write('O seu personagem é Homem? (s/n).'),
 	read(AnswerMale),
@@ -35,12 +37,16 @@ is_bastard :-
 	has_black_hair.
 
 has_black_hair :-
-	write('O seu personagem tem cabelo ruivo? (s/n).'),
+	write('O seu personagem tem cabelo preto? (s/n).'),
 	read(AnswerHair),
-	compare_hair(AnswerHair, 'ruivo', AuxList),
-  	length(AuxList, List_length), List_length == 1,
-  	[Head | Tail] = AuxList,
-	write('Hmm... Eu acho que... '), write(Head);
+	compare_boolean(AnswerHair,'s', Asw_black_hair),
+	asserta(information(blackHair, Asw_black_hair)),
+	information(gender, Asw_gender),
+	information(bastard, Asw_bastard),
+	findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, _, _), Character_list),
+  	length(Character_list, List_length), List_length == 1,
+	character(Guess , Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, _, _),
+	write('Hmm... Eu acho que... '), write(Guess);
 	has_child.
 
 has_child :-
@@ -50,10 +56,10 @@ has_child :-
     asserta(information(child, Asw_child)),
 	information(gender, Asw_gender),
 	information(bastard, Asw_bastard),
-    information(hair, Asw_hair),
-    findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, _, _, Asw_child, _), Character_list),
+    information(blackHair, Asw_black_hair),
+    findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, Asw_child, _), Character_list),
   	length(Character_list, List_length), List_length == 1,
-	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, _, _, Asw_child, _),
+	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, Asw_child, _),
 	write('Hmm... Eu acho que... '), write(Guess);
     been_to_theWall.
 
@@ -64,27 +70,29 @@ been_to_theWall :-
     asserta(information(wall, Asw_wall)),
 	information(gender, Asw_gender),
 	information(bastard, Asw_bastard),
-    information(hair, Asw_hair),
+    information(blackHair, Asw_black_hair),
     information(child, Asw_child),
-    findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, _, _, Asw_child, Asw_wall), Character_list),
+    findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
-	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, _, _, Asw_child, Asw_wall),
+	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, Asw_child, Asw_wall),
+	write('Hmm... Eu acho que... '), write(Guess);
     has_white_skin.
 
 has_white_skin :-
     write('O seu personagem tem pele branca? (s/n).'),
 	read(AnswerSkin),
-	compare_skin(AnswerSkin,'s', _),
+	compare_boolean(AnswerSkin,'s', Asw_white_skin),
+	asserta(information(wall, Asw_wall)),
 	information(gender, Asw_gender),
 	information(bastard, Asw_bastard),
-    information(hair, Asw_hair),
+    information(blackHair, Asw_black_hair),
     information(child, Asw_child),
     information(wall, Asw_wall),
-    information(skin, Asw_skin),
-    findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, Asw_skin, _, Asw_child, Asw_wall), Character_list),
+    information(whiteSkin, Asw_white_skin),
+    findall(X, character(X, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, Asw_white_skin, _, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
-	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, Asw_skin, _, Asw_child, Asw_wall),
+	character(Guess, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, Asw_white_skin, _, Asw_child, Asw_wall),
 	write('Hmm... Eu acho que... '), write(Guess);
-    findall(Z, character(Z, Asw_gender, _, _, Asw_bastard, Asw_hair, _, _, Asw_skin, _, Asw_child, Asw_wall), Character_list_dois),
+    findall(Z, character(Z, Asw_gender, _, _, Asw_bastard, Asw_black_hair, _, _, Asw_white_skin, _, Asw_child, Asw_wall), Character_list_dois),
     [Head | Tail] = Character_list_dois,
     write('Hmm... Fiquei em dúvida... Mas acho que é '), write(Head), nl, write(Tail).
