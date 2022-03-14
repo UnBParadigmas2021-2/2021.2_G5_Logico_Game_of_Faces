@@ -19,6 +19,9 @@ information(A, B).
 
 main :-	
 	nl, write('Bem-vindo ao Game of faces'), nl,  write('Pense em algum personagem de Game of Thrones e tentarei advinhar'), nl,nl,
+	reset_informations,
+	findall(X, character(X, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _), List),
+	remove_non_match_characters(List),
 	popula,
 	is_Male.
 

@@ -15,6 +15,19 @@ compare_boolean(A,C,D) :-
 	  ;  C = 'FALSE', D = 'TRUE'
     ).
 
+reset_informations :-
+    findall(X, information(X, _), List),
+    retract_information(List).
+
+reset_informations.
+
+retract_information(List) :-
+    [Head | Tail] = List,
+    retract(information(Head, _)),
+    retract_information(Tail).
+
+retract_information.
+
 checks_if_has_only_one_element_and_returns_it(List, Head) :-
     length(List, List_length),
     List_length == 1,
