@@ -20,8 +20,8 @@
 
 ## Sobre
 
-O projeto _Game of Faces_ é um programa adivinho baseado no jogo Akinator e Cara a Cara. O código tem como missão adivinhar a personagem da famosa série de televisão _Game of Thrones_ que o úsuario está pensando. Para isso, foi utilizado a linguagem de programação _Prolog_.
-A partir das respostas que o úsuario dá ao nosso programa, é possível identificar a personagem utilizando principios do paradigma lógico vistos em sala de aula.
+O projeto _Game of Faces_ é um programa adivinho baseado no jogo Akinator e Cara a Cara. O código tem como missão adivinhar a personagem da famosa série de televisão _Game of Thrones_ que o usuário está pensando. Para isso, foi utilizado a linguagem de programação _Prolog_.
+A partir das respostas que o usuário dá ao nosso programa, é possível identificar a personagem utilizando princípios do paradigma lógico vistos em sala de aula.
 
 ## Screenshots
 
@@ -40,7 +40,7 @@ A partir das respostas que o úsuario dá ao nosso programa, é possível identi
 
 1- Instalar a ferramenta [SWI-Prolog](https://www.swi-prolog.org/download/stable). Seguindo o passo a passo para sua plataforma.
 
-2- Faça um clone do reposítorio
+2- Faça um clone do repositório
 
 3- No terminal, vá para a pasta raíz do projeto e execute o seguinte comando:
 
@@ -70,7 +70,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 ## Uso
 
-Para usufruir do programa, deve-se executar todas as etapas a cima. Assim que o programa tiver sido executado basta responder as perguntas do teminal com `s.` para sim ou `n.` para não. Não existe mais nenhum caso de uso.
+Para usufruir do programa, deve-se executar todas as etapas acima. Assim que o programa tiver sido executado basta responder as perguntas do teminal com `s.` para sim ou `n.` para não. Não existe mais nenhum caso de uso.
 
 ## Vídeo
 
@@ -78,9 +78,8 @@ Adicione 1 ou mais vídeos com a execução do projeto.
 
 ## Outros
 
-- Embed de nosso prótotipo
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeEYsPcKrCMTnyyegUKhE6m%2FParadigmal%25C3%25B3gico%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+- [Apresentação](https://github.com/UnBParadigmas2021-2/2021.2_G5_Logico_Game_of_Faces/blob/master/Assets/readme/apresentacao.mp4), link para download.
+- [Prótotipo](https://www.figma.com/file/eEYsPcKrCMTnyyegUKhE6m/Paradigmal%C3%B3gico?node-id=0%3A1) para nosso prótotipo idealizado.
 
 ## Fontes
 
