@@ -17,7 +17,7 @@ information(A, B).
 % Modelo para uso (49 campos no TOTAL): character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _)
 
 main :-	
-	nl, write('Bem-vindo ao Game of faces'), nl,nl,
+	nl, write('Bem-vindo ao Game of faces'), nl,  write('Pense em algum personagem de Game of Thrones e tentarei advinhar'), nl,nl,
 	popula,
     popula_information,
 
@@ -40,11 +40,6 @@ is_bastard :-
 	read(AnswerBastard),
 	compare_boolean(AnswerBastard,'s', Asw_bastard),
 	asserta(information(bastard, Asw_bastard)),
-	information(gender, Asw_gender),
-	findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _), Character_list),
-  	length(Character_list, List_length), List_length == 1,
-	character(Guess , Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _),
-	write('Hmm... Eu acho que... '), write(Guess);
 	has_black_hair.
 
 has_black_hair :-
@@ -56,22 +51,8 @@ has_black_hair :-
 	information(bastard, Asw_bastard),
 	findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _), Character_list),
   	length(Character_list, List_length), List_length == 1,
-	character(Guess , Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _),
-	write('Hmm... Eu acho que... '), write(Guess);
-	has_child.
-
-has_blonde_hair :-
-	write('O seu personagem tem cabelo loiro? (s/n).'),
-	read(AnswerHair),
-	compare_boolean(AnswerHair,'s', Asw_blonde_hair),
-	asserta(information(blondeHair, Asw_blonde_hair)),
-	information(gender, Asw_gender),
-	information(bastard, Asw_bastard),
-	information(blackHair, Asw_black_hair),
-	findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _), Character_list),
-  	length(Character_list, List_length), List_length == 1,
-	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _),
-	write('Hmm... Eu acho que... '), write(Guess);
+	[Head | Tail] = Character_list,
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Head);
 	has_child.
 
 has_child :-
@@ -89,7 +70,7 @@ has_child :-
     findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_child, _), Character_list),
   	length(Character_list, List_length), List_length == 1,
 	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_child, _),
-	write('Hmm... Eu acho que... '), write(Guess);
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Guess);
     been_to_theWall.
 
 been_to_theWall :-
@@ -108,7 +89,7 @@ been_to_theWall :-
     findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
 	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_child, Asw_wall),
-	write('Hmm... Eu acho que... '), write(Guess);
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Guess);
     is_dead.
 
 is_dead :-
@@ -128,7 +109,7 @@ is_dead :-
     findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
 	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_child, Asw_wall),
-	write('Hmm... Eu acho que... '), write(Guess);
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Guess);
     is_elder.
 
 is_elder :-
@@ -149,7 +130,7 @@ is_elder :-
     findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, _, _, _, _, _, Asw_ageElder, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
 	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, _, _, _, _, _, Asw_ageElder, Asw_child, Asw_wall),
-	write('Hmm... Eu acho que... '), write(Guess);
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Guess);
 	has_white_skin.
 
 is_adult :-
@@ -172,7 +153,7 @@ is_adult :-
     findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, _, _, _, Asw_ageAdult, Asw_ageChild, Asw_ageElder, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
 	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, _, _, _, Asw_ageAdult, Asw_ageChild, Asw_ageElder, Asw_child, Asw_wall),
-	write('Hmm... Eu acho que... '), write(Guess);
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Guess);
 	has_white_skin.
 
 
@@ -198,7 +179,7 @@ has_white_skin :-
     findall(X, character(X, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, Asw_white_skin, _, _, Asw_ageAdult, Asw_ageChild, Asw_ageElder, Asw_child, Asw_wall), Character_list),
   	length(Character_list, List_length), List_length == 1,
 	character(Guess, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, Asw_white_skin, _, _, Asw_ageAdult, Asw_ageChild, Asw_ageElder, Asw_child, Asw_wall),
-	write('Hmm... Eu acho que... '), write(Guess);
+	write('Já sei! Tenho certeza que seu personagem é:  '), write(Guess);
     findall(Z, character(Z, Asw_gender, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, Asw_blonde_hair, Asw_red_hair, Asw_brown_hair, Asw_gray_hair, Asw_dead, _, _, _, _, _, _, _, Asw_white_skin, _, _, Asw_ageAdult, Asw_ageChild, Asw_ageElder, Asw_child, Asw_wall), Character_list_dois),
     [Head | Tail] = Character_list_dois,
-    write('Hmm... Fiquei em dúvida... Mas acho que é '), write(Head), nl, write(Tail).
+    write('Uhm... Fiquei em dúvida... Mas acho que é '), write(Head), nl, write(Tail).
