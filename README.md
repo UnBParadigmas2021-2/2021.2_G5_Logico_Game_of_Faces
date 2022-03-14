@@ -74,11 +74,10 @@ Para usufruir do programa, deve-se executar todas as etapas acima. Assim que o p
 
 ## Vídeo
 
-Adicione 1 ou mais vídeos com a execução do projeto.
+- [Apresentação](https://github.com/UnBParadigmas2021-2/2021.2_G5_Logico_Game_of_Faces/blob/master/Assets/readme/apresentacao.mp4), link para download.
 
 ## Outros
 
-- [Apresentação](https://github.com/UnBParadigmas2021-2/2021.2_G5_Logico_Game_of_Faces/blob/master/Assets/readme/apresentacao.mp4), link para download.
 - [Prótotipo](https://www.figma.com/file/eEYsPcKrCMTnyyegUKhE6m/Paradigmal%C3%B3gico?node-id=0%3A1) para nosso prótotipo idealizado.
 
 ## Fontes
