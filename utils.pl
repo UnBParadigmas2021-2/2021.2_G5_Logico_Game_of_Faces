@@ -50,6 +50,15 @@ compare_age_adult(A,B,C) :-
             asserta(information(ageChild, 'TRUE'))
     ).
 
+checks_if_has_only_one_element_and_returns_it(List, Head) :-
+    length(List, List_length),
+    List_length == 1,
+	[Head | Tail] = List.
+
+print_character(Character) :-
+    write('Já sei! Tenho certeza que seu personagem é:  '),
+    write(Character).
+
 popula_information :-
     asserta(information(gender, 'undefined')),
     asserta(information(bastard, 'undefined')),
