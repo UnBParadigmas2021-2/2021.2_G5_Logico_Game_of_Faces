@@ -58,11 +58,3 @@ checks_if_has_only_one_element_and_returns_it(List, Head) :-
 print_character(Character) :-
     write('Já sei! Tenho certeza que seu personagem é:  '),
     write(Character).
-
-popula_information :-
-    asserta(information(gender, 'undefined')),
-    asserta(information(bastard, 'undefined')),
-    asserta(information(hair, 'undefined')),
-    asserta(information(child, 'undefined')),
-    asserta(information(wall, 'undefined')),
-    asserta(information(skin, 'undefined')).

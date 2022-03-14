@@ -19,7 +19,6 @@ information(A, B).
 main :-	
 	nl, write('Bem-vindo ao Game of faces'), nl,  write('Pense em algum personagem de Game of Thrones e tentarei advinhar'), nl,nl,
 	popula,
-  popula_information,
 	is_Male.
 
 
@@ -300,5 +299,5 @@ has_white_skin :-
 	print_character(Head);
 	findall(Z, character(Z, Asw_gender, Asw_stark_house, _, Asw_lannister_house, _, _, _, _, _, _, _, _, _, _, _, Asw_brotherhood, _, Asw_freePeople, Asw_north, _, _, _, _, _, _, _, Asw_bastard, Asw_black_hair, _, _, _, _, Asw_dead, _, Asw_old_gods_forest, Asw_faith_of_sevens, _, _, _, Asw_drowned_god, Asw_white_skin, _, _, Asw_age_adult, _, _, Asw_child, Asw_wall), Character_list_two),
 	[Head | Tail] = Character_list_two,
-	write('Uhm... Fiquei em dúvida... Mas acho que é '), write(Head), nl, write(Tail).
+	write('Uhm... Fiquei em dúvida... Mas acho que é '), write(Head), nl.
 
