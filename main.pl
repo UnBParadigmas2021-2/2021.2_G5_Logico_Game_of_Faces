@@ -20,7 +20,6 @@ information(A, B).
 main :-	
 	nl, write('Bem-vindo ao Game of faces'), nl,  write('Pense em algum personagem de Game of Thrones e tentarei advinhar'), nl,nl,
 	popula,
-  popula_information,
 	is_Male.
 
 
@@ -347,5 +346,5 @@ has_white_skin :-
 	[Head | Tail] = Character_list_two,
 	checks_if_has_only_one_element_and_returns_it(Character_list, Head),
 	print_character(Head);
-	write('Uhm... Fiquei em dúvida... Mas acho que é '), write(Head), nl, write(Tail).
+	write('Uhm... Fiquei em dúvida... Mas acho que é '), write(Head), nl.
 

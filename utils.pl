@@ -39,11 +39,3 @@ check_empty_characters :-
     halt.
 
 check_empty_characters.
-
-popula_information :-
-    asserta(information(gender, 'undefined')),
-    asserta(information(bastard, 'undefined')),
-    asserta(information(hair, 'undefined')),
-    asserta(information(child, 'undefined')),
-    asserta(information(wall, 'undefined')),
-    asserta(information(skin, 'undefined')).
